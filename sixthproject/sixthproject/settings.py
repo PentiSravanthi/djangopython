@@ -15,15 +15,17 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
-print(TEMPLATE_PATH)
+
+TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
+
+
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-jkvefez=_+pqjs-g1adgc7aw$9mvlj7qmocn-3ac694ncu^4&w'
+SECRET_KEY = 'django-insecure-e@qh&kv2%qx+s^cxq%dc84e%dq8c*(j_r66^m30v+rhb+97@w7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -58,7 +60,7 @@ ROOT_URLCONF = 'sixthproject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATE_PATH],
+        'DIRS': [TEMPLATE_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
